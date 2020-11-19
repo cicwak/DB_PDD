@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
@@ -7,7 +8,7 @@ SECRET_KEY = '4hkj$ci%8o0zj*0!%54ngai4ng5oabygv##()%*w_q8k64*@^ontp!p-o4gc$ad%89
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', '87.239.106.114']
+ALLOWED_HOSTS = ['127.0.0.1', '87.239.106.114', '87.239.106.114:8000']
 
 DATABASES = {
     'default': {
