@@ -410,7 +410,7 @@ def post_points_id(request):
         else:
             reedit += Points_item + ';'
 
-    profiles.Points = reedit + f'{i},{json[i]}'
+    profiles.Points = reedit + '{},{}'.format(i, json[i])
     profiles.save()
 
     if ans == True:
