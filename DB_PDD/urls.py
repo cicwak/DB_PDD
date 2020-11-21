@@ -17,11 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from .views import index2 as index
-
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('.well-known/pki-validation/FCC5B4FCF83FAFE7EC4AD9D6AA7383AC.txt', index),
     path('Json/', include('JSON_DB.urls')),
     path('RulesAuto/', include('DB_RULES.urls')),
     path('Roads/', include('DB_ROADS.urls')),
